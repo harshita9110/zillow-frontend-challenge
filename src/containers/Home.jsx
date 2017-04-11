@@ -40,7 +40,7 @@ export class Home extends Component {
     async handleSubmit() {
         let errors = this.state.errors;
         this.validate();
-        let citystatezip=this.state.zip ? this.state.city+this.state.state+this.state.zip : this.state.city+this.state.state;
+        let citystatezip=this.state.zip ? this.state.city+' '+this.state.state+' '+this.state.zip : this.state.city+' '+this.state.state;
         if(this.allNull(errors)) {
             await this.props.searchActions.getSearchResults(encodeURIComponent(this.state.address), encodeURIComponent(citystatezip));
 
