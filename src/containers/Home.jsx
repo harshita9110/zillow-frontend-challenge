@@ -86,7 +86,7 @@ export class Home extends Component {
                 <option key={index} value={state}>{state}</option>
             )
         });
-
+        
         let errors = this.state.errors;
 
         return(
@@ -116,7 +116,7 @@ export class Home extends Component {
                         { errors.zip ? <div className="errors">{errors.zip}</div> : null}
                     </div>
                     <div>
-                        <button type="submit" onClick={this.handleSubmit}>Submit</button>
+                        <button type="submit" disabled={ this.props.search.isFetching } onClick={this.handleSubmit}>Submit</button>
                     </div>
                 </div>
                 { this.props.search.result ? (<HomeDetails details={this.props.search.result} />): null }

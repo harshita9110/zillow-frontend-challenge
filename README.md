@@ -1,6 +1,6 @@
 # Zillow coding challenge
 
-- Create a React app that works with the Zillow GetSearchResults API. This app must extract metadata from search results which allows the user to search for a specific address and return zillow resukts like price range and zillow estimate for the area.
+- Create a React app that works with the Zillow GetSearchResults API. This app must extract metadata from search results which allows the user to search for a specific address and return zillow results like price range and zillow estimate for the area.
 
 
 ### Pre-requisite
