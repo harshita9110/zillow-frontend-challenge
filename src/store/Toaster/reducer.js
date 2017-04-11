@@ -1,7 +1,6 @@
 import {
-  SHOW_TOASTER,
-  HIDE_TOASTER
-
+    SHOW_TOASTER,
+    HIDE_TOASTER
 } from './actions';
 export function toaster(state = {
     visible: false,

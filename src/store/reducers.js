@@ -7,5 +7,4 @@ const rootReducer = combineReducers({
     toaster
 })
 
-
 export default rootReducer

@@ -4,13 +4,13 @@ import rootReducer from './reducers'
 
 export default function configureStore(preloadedState) {
     return createStore(
-    rootReducer,
-    preloadedState,
-    compose(
-        applyMiddleware(
-          thunkMiddleware,
-        ),
-        window.devToolsExtension ? window.devToolsExtension() : f => f
-    )
+        rootReducer,
+        preloadedState,
+        compose(
+            applyMiddleware(
+              thunkMiddleware,
+            ),
+            window.devToolsExtension ? window.devToolsExtension() : f => f
+        )
     )
 }

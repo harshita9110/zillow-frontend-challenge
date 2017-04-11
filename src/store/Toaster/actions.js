@@ -5,7 +5,6 @@ export const HIDE_TOASTER = 'HIDE_TOASTER';
 function showToaster( msg ) {
     return {
         type: SHOW_TOASTER,
-
         message: msg
     };
 }
